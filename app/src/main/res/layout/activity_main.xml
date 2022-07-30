@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.superbderrick.scoreboard.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/topView"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.5"
+        android:background="@color/colorDefaultBackGround">
+
+        <RelativeLayout
+            android:id="@+id/topLeftBackground"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/leftUserName"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/colorTouch"
+                android:hint="User1"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextviewBackground"
+                android:textColorHint="@color/colorTextviewBackground" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/topRightBackground"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/rightUserEdit"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@color/colorTouch"
+                android:hint="@string/user_second"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextviewBackground"
+                android:textColorHint="@color/colorTextviewBackground" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:id="@+id/middleView"
+        android:background="@color/colormiddle"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6">
+
+        <LinearLayout
+            android:id="@+id/leftScoreLayout"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@color/colorDefaultBackGround">
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@color/colorDefaultBackGround">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <io.github.superbderrick.scoreboard.ui.TouchLayout
+                    android:id="@+id/leftUpperTouchView"
+                    android:background="@color/colorTouch"
+                    android:layout_weight="4.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip">
+
+                </io.github.superbderrick.scoreboard.ui.TouchLayout>
+
+                <RelativeLayout
+                    android:id="@+id/leftBar"
+                    android:background="@color/colormiddle"
+                    android:layout_weight="0.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip">
+                </RelativeLayout>
+
+                <io.github.superbderrick.scoreboard.ui.TouchLayout
+                    android:id="@+id/leftBottomTouchView"
+                    android:background="@color/colorTouch"
+                    android:layout_weight="4.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip">
+
+                </io.github.superbderrick.scoreboard.ui.TouchLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/leftScoreTextview"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="@string/zero"
+                android:textColor="@color/colorDe"
+                android:textSize="150sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/centerParent"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/colorDefaultBackGround">
+
+            <View
+                android:id="@+id/centerbar"
+                android:layout_width="80dip"
+                android:layout_height="10dip"
+                android:layout_centerInParent="true"
+                android:background="@color/colorBarBackground"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@color/colorDefaultBackGround">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <io.github.superbderrick.scoreboard.ui.TouchLayout
+                    android:id="@+id/rightUpperTouchView"
+                    android:background="@color/colorTouch"
+                    android:layout_weight="4.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip">
+
+                </io.github.superbderrick.scoreboard.ui.TouchLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rightbar"
+                    android:layout_weight="0.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip">
+
+                </RelativeLayout>
+
+                <io.github.superbderrick.scoreboard.ui.TouchLayout
+                    android:id="@+id/rightBottomTouchView"
+                    android:background="@color/colorTouch"
+                    android:layout_weight="4.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip">
+
+                </io.github.superbderrick.scoreboard.ui.TouchLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/rightScoreTextview"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="@string/zero"
+                android:textSize="150sp"
+                android:textColor="@color/colorDe"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rightScoreLayout"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@color/colorDefaultBackGround">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2.5"
+        android:background="@color/colorDefaultBackGround"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bottomParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:layout_weight="0.8"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/bottomLeftbackgroundview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/leftSetScoreTextview"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/zero"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorDe"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottomRightBackgroundView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/rightsetscoretextview"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/zero"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorDe"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <ImageButton
+                    android:id="@+id/timerResetButton"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginLeft="5dip"
+                    android:background="@color/tr"
+                    android:contentDescription="@string/def_reset"
+                    android:src="@drawable/baseline_refresh_black_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <ImageButton
+                    android:id="@+id/settingButton"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginRight="25dip"
+                    android:background="@color/tr"
+                    android:contentDescription="@string/def_setting"
+                    android:src="@drawable/baseline_settings_black_24" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

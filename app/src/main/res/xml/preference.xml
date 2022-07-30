@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="keyword_screen">
+
+    <PreferenceCategory android:title="Game Settings"  >
+
+        <ListPreference android:title="@string/setscore_setting"
+
+            android:key="@string/setscore_key"
+            android:defaultValue="5"
+            android:entries="@array/setScoreArray"
+            android:entryValues="@array/setScoreValues" />
+
+        <ListPreference android:title="@string/handy_def_setting"
+            android:key="@string/handyy_key"
+            android:defaultValue="0"
+            android:entries="@array/sethandyArray"
+            android:entryValues="@array/setHandyValues" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Game Theme" >
+
+        <ListPreference android:title="@string/setting_theme_title"
+            android:key="@string/setting_theme_key"
+            android:defaultValue="0"
+            android:entries="@array/themeArray"
+            android:entryValues="@array/themeArrayValues" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Help">
+
+        <Preference
+            android:key="contactDevKey"
+            android:title="Contact developer"
+            android:summary="@string/setting_title">
+
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>
