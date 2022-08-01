@@ -10,15 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: checkout
-         uses: action/checkout@v2.3.2
+         uses: action/checkout@v2
        - name: setup JDK
-         uses: action/setup-java@1.4.2
+         uses: action/setup-java@1
          with: 
           java-version: 1.8
        - name: build with gradle
          run: ./gradlew build
        - name: upload APK
-         uses: actions/uploads-artifact@v2.1.4
+         uses: actions/uploads-artifact@v2
          with: 
             name: app
             path: app/build/outputs/apk/debug/app-debug.apk
