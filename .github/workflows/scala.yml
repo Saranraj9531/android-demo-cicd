@@ -1,24 +1,39 @@
-name: Scala CI
+# This workflow to help you automate your building process
+
+name: Integrate Firebase Distributions + Github Actions
 
 on:
-  push:
-    branches: [ newcode ]
+  pull_request_target:
+    branches: [ newcode]
+
+
 
 jobs:
-  build:
-
+  builds:
     runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-    - name: Run tests
-      run: sbt test
-    - name: upload APK
-      uses: actions/uploads-artifact@v2.1.4
-      with:
-            name: app
-            path: app/build/outputs/apk/debug/app-debug.apk
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Setup Java JDK
+        uses: actions/setup-java@v1
+        with:
+         java-version: 1.8
+        
+      - name: Build Gradle
+        run: ./gradlew build
+    
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: app
+          path: app/build/outputs/apk/debug/app-debug.apk
+          
+      #- name: Upload Artifact To Firebase App Distribution
+        #uses: wzieba/Firebase-Distribution-Github-Action@v1.3.2
+       #with:
+        #  appId: ${{ secrets.FIREBASE_ID }}
+         # token: ${{ secrets.FIREBASE_TOKEN }}
+          # groups: Android-CICD-Testers
+         # releaseNotes: "Hey! This my first integrate Firebase distributions with Github Actions"
+         # file: app/build/outputs/apk/debug/app-debug.apk   
