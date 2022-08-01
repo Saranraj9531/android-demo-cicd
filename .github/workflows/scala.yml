@@ -1,12 +1,8 @@
-# This workflow to help you automate your building process
-
-name: Integrate Firebase Distributions + Github Actions
+name: Android Development Branch CI
 
 on:
-  pull_request_target:
-    branches: [ newcode]
-
-
+  push:
+    branches: [ master ]
 
 jobs:
   builds:
