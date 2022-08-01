@@ -1,4 +1,4 @@
-name: Android Development Branch CI
+name: Android CICD
 
 on:
   push:
