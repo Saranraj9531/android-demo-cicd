@@ -2,7 +2,7 @@ name: Android Branch CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ newcode ]
 
 jobs:
   build:
