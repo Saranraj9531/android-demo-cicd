@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginBottom="8dp"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_group_icon_before"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/default_user" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_forward" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_group_icon_after"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/default_user" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_group_icon_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:textColor="@color/color_desc_text"
+        android:textSize="@dimen/_12sdp" />
+
+</LinearLayout>

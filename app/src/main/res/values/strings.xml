@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name" translatable="false">GPS Comm</string>
+    <string name="string_welcome_content" translatable="false">Start Using GPS Comm</string>
+    <string name="string_description" translatable="false">Create your unique username to stay completely decentralized in GPS Comm.</string>
+    <string name="hint_user_name" translatable="false">User Name</string>
+    <string name="string_username_already_taken" translatable="false">Username already registered in GPS Comm</string>
+    <string name="hint_gender" translatable="false">Gender</string>
+    <string name="hint_date_of_birth" translatable="false">Date of Birth</string>
+    <string name="str_next" translatable="false">Next</string>
+    <string name="string_male" translatable="false">Male</string>
+    <string name="string_female" translatable="false">Female</string>
+    <string name="string_others" translatable="false">Others</string>
+    <string name="str_login" translatable="false">Already have an account? Login</string>
+    <string name="str_register" translatable="false">Register</string>
+    <string name="hint_passport_number" translatable="false">Passport Number or ID</string>
+    <string name="string_upload_passport_or_id" translatable="false">Upload Passport or ID</string>
+    <string name="string_use_camera_or_select_from_gallery" translatable="false">Use Camera or Select From Gallery</string>
+    <string name="string_note_gps_team_will_verify_your_id" translatable="false">Note: GPS Team will Verify your ID</string>
+    <string name="str_get_started" translatable="false">Get Started</string>
+    <string name="string_your_temporary_password_is" translatable="false">Your temporary password is</string>
+    <string name="str_change_password" translatable="false">Change Password</string>
+    <string name="error_username" translatable="false">Username already taken! Check your inputs</string>
+    <string name="string_here_we_go" translatable="false">Here we go!</string>
+    <string name="string_verification_desc" translatable="false">Please Provide your details and an Optional Profile Photo.</string>
+    <string name="hint_type_a_name" translatable="false">Full Name</string>
+    <string name="str_settings" translatable="false">Settings</string>
+    <string name="hint_permissions" translatable="false">Permissions Required \nYou have forcefully denied some of the required permissions for this action. Please open settings, go to permissions and allow them.</string>
+    <string name="no_internet" translatable="false">Check your internet connection.</string>
+    <string name="str_welcome_to_gps_chat" translatable="false">Start Using GPS Comm</string>
+    <string name="str_login_desc" translatable="false">Login with your unique username to stay completely decentralized in GPS Comm.</string>
+    <string name="hint_password" translatable="false">Password</string>
+    <string name="string_forgot_password" translatable="false">Forgot Password?</string>
+    <string name="hint_login" translatable="false">Login</string>
+    <string name="create_chat_group" translatable="false">Create chat group</string>
+    <string name="settings" translatable="false">Settings</string>
+    <string name="string_my_profile" translatable="false">My Profile</string>
+    <string name="string_edit" translatable="false">Edit</string>
+    <string name="user_name" translatable="false">User Name</string>
+    <string name="string_user" translatable="false">User</string>
+    <string name="string_temporary" translatable="false">Temporary</string>
+    <string name="string_permanent" translatable="false">Permanent</string>
+    <string name="string_update" translatable="false">Update</string>
+    <string name="string_logout" translatable="false">Logout</string>
+    <string name="string_forgot_pwd" translatable="false">Forgot Password</string>
+    <string name="str_allow_permission" translatable="false">Allow Permission</string>
+    <string name="str_permission_samsung" translatable="false">Please enable \"Appear on top\" from app settings to allow app access from background for incoming calls etc.</string>
+    <string name="str_permission_xiaomi" translatable="false">Please enable \"Display pop-up windows while running in the background\" from app settings to allow app access from background for incoming calls etc.</string>
+    <string name="string_to" translatable="false">To:</string>
+    <string name="hint_username" translatable="false">User Name</string>
+    <string name="string_register_success_info" translatable="false">You have Successfully Registered into GPS Comm. You will get a Generated Password from GPS Admin.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="hint_no_chat" translatable="false">\"There are no recent chat yet. Tap \"Create New\" button to discover people to chat with\"</string>
+    <string name="hint_no_call" translatable="false">There are no recent calls yet.</string>
+    <string name="hint_no_video_call" translatable="false">There are no recent video calls yet.</string>
+    <string name="str_no" translatable="false">No</string>
+    <string name="str_yes" translatable="false">Yes</string>
+    <string name="str_password_desc" translatable="false">Please setup your new password by entering your temporary password</string>
+    <string name="hint_new_password" translatable="false">New Password</string>
+    <string name="hint_confirm_password" translatable="false">Confirm Password</string>
+    <string name="str_last_message_content" translatable="false">You changed this group\'s icon</string>
+    <string name="msg_alert">Alert</string>
+    <string name="msg_alert_content">\"Do you want to end your session in \"</string>
+    <string name="msg_yes">Yes</string>
+    <string name="msg_no">No</string>
+    <string name="crop_image_activity_title">Choose Crop</string>
+
+
+    <string name="ic_rotate_left_24" translatable="false">Rotate counter clockwise</string>
+    <string name="ic_rotate_right_24" translatable="false">Rotate</string>
+    <string name="crop_image_menu_crop" translatable="false">Crop</string>
+    <string name="ic_flip_24" translatable="false">Flip</string>
+    <string name="ic_flip_24_horizontally" translatable="false">Flip horizontally</string>
+    <string name="ic_flip_24_vertically" translatable="false">Flip vertically</string>
+    <string name="pick_image_intent_chooser_title" translatable="false">Select source</string>
+    <string name="crop_image_activity_no_permissions" translatable="false">Cancelling, required permissions are not granted</string>
+    <string name="str_you">you</string>
+
+
+</resources>

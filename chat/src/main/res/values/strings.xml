@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="str_map_key" translatable="false">AIzaSyCYNsTQZJ05kOqn-YN1L8YT958I35Gi1LE</string>
+    <!--    <string name="str_map_key" translatable="false">AIzaSyB5onKin2tDgivtIIeK4H7v0GS50Ua3Ico</string>-->
+    <string name="str_settings" translatable="false">Settings</string>
+    <string name="tap_to_seen_the_person_info" translatable="false">Tap to see the user info</string>
+    <string name="type_a_message" translatable="false">Type a message</string>
+    <string name="no_internet" translatable="false">Check your Internet Connection!</string>
+    <string name="string_camera" translatable="false">Camera</string>
+    <string name="string_gallery" translatable="false">Gallery</string>
+    <string name="string_document" translatable="false">Document</string>
+    <string name="string_attachment" translatable="false">Attachment</string>
+    <string name="string_live_location" translatable="false">Live Location</string>
+    <string name="string_gif" translatable="false">Share Gif</string>
+    <string name="string_location" translatable="false">Location</string>
+    <string name="hint_permissions" translatable="false">Permissions Required \nYou have forcefully denied some of the required permissions for this action. Please open settings, go to permissions and allow them.</string>
+
+    <string name="ic_rotate_left_24" translatable="false">Rotate counter clockwise</string>
+    <string name="ic_rotate_right_24" translatable="false">Rotate</string>
+    <string name="crop_image_menu_crop" translatable="false">Crop</string>
+    <string name="ic_flip_24" translatable="false">Flip</string>
+    <string name="ic_flip_24_horizontally" translatable="false">Flip horizontally</string>
+    <string name="ic_flip_24_vertically" translatable="false">Flip vertically</string>
+    <string name="pick_image_intent_chooser_title" translatable="false">Select source</string>
+    <string name="crop_image_activity_no_permissions" translatable="false">Cancelling, required permissions are not granted</string>
+
+
+    <string name="seen_by" translatable="false">Seen by</string>
+    <string name="delivered_to" translatable="false">Delivered to</string>
+    <string name="remaining" translatable="false">remaining</string>
+    <string name="message_info" translatable="false">Message info</string>
+    <string name="forward_to" translatable="false">Forward to…</string>
+    <string name="string_delete_for_everyone" translatable="false">Delete for everyone</string>
+    <string name="string_delete" translatable="false">Delete for me</string>
+    <string name="string_forward" translatable="false">Forward</string>
+    <string name="string_reply" translatable="false">Reply</string>
+    <string name="string_edit" translatable="false">Edit</string>
+    <string name="string_choose_options" translatable="false">Choose Options</string>
+    <string name="document" translatable="false">Document</string>
+    <string name="string_group_admin" translatable="false">Group Admin</string>
+    <string name="string_retry" translatable="false">Retry</string>
+    <string name="stop_sharing" translatable="false">Stop Sharing</string>
+    <string name="view_live_location" translatable="false">View Live Location</string>
+    <string name="amount_sent" translatable="false">Amount Sent</string>
+    <string name="doller" translatable="false">$</string>
+    <string name="pay_now" translatable="false">Pay Now</string>
+    <string name="reject" translatable="false">Reject</string>
+    <string name="string_chat_spaces" translatable="false">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="string_chat_spaces_receiver" translatable="false">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="str_camera" translatable="false">Camera</string>
+    <string name="str_video" translatable="false">Video</string>
+    <string name="str_pictures" translatable="false">Pictures</string>
+    <string name="str_select_option" translatable="false">Select option</string>
+
+    <!--Audio Strings-->
+    <string name="ERROR_PLAYVIEW_NULL" translatable="false">Play view cannot be null</string>
+    <string name="URI_NULL" translatable="false">Uri cannot be null. Call init() before calling this method</string>
+    <string name="CALL_INIT" translatable="false">Call init() before calling this method</string>
+    <string name="ERROR_PLAYTIME_CURRENT_NEGATIVE" translatable="false">Current playback time cannot be negative</string>
+    <string name="ERROR_PLAYTIME_TOTAL_NEGATIVE" translatable="false">Total playback time cannot be negative</string>
+    <string name="ERROR_PAUSEVIEW_NULL" translatable="false">Pauseview cannot be null</string>
+    <string name="ERROR_PLAYERCONTAINER_NULL" translatable="false">Player container cannot be null</string>
+    <string name="ERROR_INFLATER_NULL" translatable="false">Inflater cannot be null</string>
+    <string name="ERROR_URI_NULL" translatable="false">Uri cannot be null</string>
+    <string name="str_retry" translatable="false">Retry</string>
+    <string name="str_file_not_found" translatable="false">File not found</string>
+    <string name="str_cancel" translatable="false">Cancel</string>
+    <string name="str_contact_info" translatable="false">Contact Info</string>
+    <string name="str_authorize" translatable="false">Authorize</string>
+    <string name="str_user_name" translatable="false">User Name</string>
+    <string name="str_block_contact" translatable="false">Block Contact</string>
+    <string name="str_unblock_contact" translatable="false">Unblock Contact</string>
+    <string name="str_temporary" translatable="false">Temporary</string>
+    <string name="str_permanent" translatable="false">Permanent</string>
+    <string name="str_media" translatable="false">Media</string>
+    <string name="str_clear_chat" translatable="false">Clear Chat</string>
+    <string name="str_wallpaper" translatable="false">Wallpaper</string>
+    <string name="str_secret_chat" translatable="false">Secret Chat</string>
+    <string name="str_block" translatable="false">Block</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="str_no_photos" translatable="false">No Photos Found</string>
+    <string name="str_no_videos" translatable="false">No Videos Found</string>
+    <string name="str_no_document" translatable="false">No Documents Found</string>
+    <string name="str_typing" translatable="false">typing…</string>
+    <string name="str_online" translatable="false" tools:ignore="ExtraTranslation">ONLINE</string>
+    <string name="str_forward_to" translatable="false">Forward to…</string>
+    <string name="str_next" translatable="false">Next</string>
+    <string name="search_hint" translatable="false">Search</string>
+    <string name="no_users_found" translatable="false">No users found…</string>
+    <string name="str_forwarded" translatable="false">Forwarded</string>
+    <string name="str_reply" translatable="false">Reply</string>
+    <string name="str_you" translatable="false">You</string>
+    <string name="str_deleted" translatable="false">Deleted</string>
+    <string name="str_last_seen" translatable="false">last seen</string>
+    <string name="str_mobile_no" translatable="false">Mobile Number</string>
+    <string name="str_gender" translatable="false">Gender</string>
+    <string name="str_date_of_birth" translatable="false">Date of Birth</string>
+    <string name="str_create_chat_group" translatable="false">Create Chat Group</string>
+    <string name="no_contacts" translatable="false">No Contacts</string>
+    <string name="str_add_participant" translatable="false">Add Participant</string>
+    <string name="str_add_participants" translatable="false">Add Participants</string>
+    <string name="str_new_group" translatable="false">New Group</string>
+    <string name="str_hint_enter_group_name" translatable="false">Enter Group Name</string>
+    <string name="str_participants" translatable="false">Participants</string>
+    <string name="str_participant" translatable="false">Participant</string>
+    <string name="str_minimum_member" translatable="false">At least 1 contact must be selected</string>
+    <string name="str_person" translatable="false">Person</string>
+    <string name="str_persons" translatable="false">Persons</string>
+    <string name="str_create_group_error" translatable="false">Choose optional picture and name to your group</string>
+    <string name="str_add_group_description" translatable="false">Add Group Description</string>
+    <string name="str_description" translatable="false">Description</string>
+    <string name="str_exit_group" translatable="false">Exit Group</string>
+    <string name="str_delete_group" translatable="false">Delete Group</string>
+    <string name="group_desc_content" translatable="false">The group description is visible to participants of this group</string>
+    <string name="str_add_subject" translatable="false">Add Subject</string>
+    <string name="str_enter_new_subject" translatable="false">Enter new subject</string>
+    <string name="str_group_description" translatable="false">Group Description</string>
+    <string name="str_subject_cant_be_empty" translatable="false">Subject can\'t be empty</string>
+    <string name="str_message" translatable="false">Message</string>
+    <string name="str_view" translatable="false">View</string>
+    <string name="str_make_group_admin" translatable="false">Make Group Admin</string>
+    <string name="str_dismiss_as_admin" translatable="false">Remove Group Admin</string>
+    <string name="str_remove" translatable="false">Remove</string>
+    <string name="str_exit" translatable="false">Exit</string>
+    <string name="str_groups" translatable="false">group</string>
+    <string name="str_group_removed_content" translatable="false">You can\'t send messages to this group because \n you\'re no longer a participant.</string>
+    <string name="str_copy" translatable="false">Copy</string>
+    <string name="str_report" translatable="false">Report</string>
+    <string name="str_ok" translatable="false">Ok</string>
+    <string name="str_you_deleted_this_message" translatable="false">Message deleted</string>
+    <string name="str_deleted_this_message" translatable="false">Message deleted</string>
+    <string name="str_edited" translatable="false">Edited</string>
+    <string name="str_unread_message" translatable="false">Unread message</string>
+    <string name="str_unread_messages" translatable="false">Unread messages</string>
+    <string name="str_delete" translatable="false">Delete</string>
+    <string name="string_powered_by_giphy" translatable="false">Powered by GIPHY</string>
+    <string name="string_unblock" translatable="false">Unblock</string>
+    <string name="string_block" translatable="false">Block</string>
+    <string name="string_last_seen_blocked" translatable="false">last seen a long time ago</string>
+    <string name="crop_image_activity_title">Crop Image</string>
+    <string name="app_name">Chat</string>
+</resources>

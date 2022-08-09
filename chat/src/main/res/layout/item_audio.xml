@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item_audio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_send_audio"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/background_text_send"
+        android:padding="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_forwarded_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:drawableStart="@drawable/ic_forward_grey"
+            android:drawablePadding="@dimen/_2sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:text="@string/str_forwarded"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_mic_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/ic_mic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_forwarded_out" />
+
+        <View
+            android:id="@+id/view_send_audio"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview_mic_send"
+            app:layout_constraintStart_toEndOf="@+id/imageview_mic_send"
+            app:layout_constraintTop_toTopOf="@+id/imageview_mic_send" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/view_dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@drawable/ic_audio_play"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/view_send_audio"
+            app:layout_constraintStart_toEndOf="@+id/view_send_audio"
+            app:layout_constraintTop_toTopOf="@+id/view_send_audio" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_play_send"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@drawable/ic_audio_play"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/view_send_audio"
+            app:layout_constraintStart_toEndOf="@+id/view_send_audio"
+            app:layout_constraintTop_toTopOf="@+id/view_send_audio" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_pause_send"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@drawable/ic_audio_pause"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/view_send_audio"
+            app:layout_constraintStart_toEndOf="@+id/view_send_audio"
+            app:layout_constraintTop_toTopOf="@+id/view_send_audio" />
+
+        <SeekBar
+            android:id="@+id/seekbar_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:theme="@style/MySeekBarTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/view_dummy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_dummy"
+            app:layout_constraintTop_toTopOf="@+id/view_dummy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_runtime_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="text"
+            android:text="09"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_7sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/textview_total_time_out"
+            app:layout_constraintTop_toTopOf="@+id/layout_send_audio" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_total_time_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="text"
+            android:text="/ 09"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_7sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/layout_send_audio"
+            app:layout_constraintTop_toTopOf="@+id/layout_send_audio" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_audio_time_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="09:10"
+            android:textColor="@color/msg_time"
+            android:textSize="@dimen/_7sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/seekbar_out"
+            app:layout_constraintTop_toBottomOf="@+id/seekbar_out" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rl_sender_retry_audio"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#99000000"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_sender_retry_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_retry"
+                android:drawableStart="@drawable/ic_file_upload_white"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/string_retry"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_receive_audio"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_text_receive"
+        android:padding="5dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_send_audio">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_forwarded_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:drawableStart="@drawable/ic_forward_grey"
+            android:drawablePadding="@dimen/_2sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:text="@string/str_forwarded"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_sender_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Nivi"
+            android:textColor="@color/color_primary"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_forwarded_in" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_mic_receive_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_mic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_sender_name" />
+
+        <View
+            android:id="@+id/view_receive_audio"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="#fee6bd"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview_mic_receive_audio"
+            app:layout_constraintStart_toEndOf="@+id/imageview_mic_receive_audio"
+            app:layout_constraintTop_toTopOf="@+id/imageview_mic_receive_audio" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/view_dummy_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@drawable/ic_audio_play"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/view_receive_audio"
+            app:layout_constraintStart_toEndOf="@+id/view_receive_audio"
+            app:layout_constraintTop_toTopOf="@+id/view_receive_audio" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_play_in"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@drawable/ic_audio_play"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/view_receive_audio"
+            app:layout_constraintStart_toEndOf="@+id/view_receive_audio"
+            app:layout_constraintTop_toTopOf="@+id/view_receive_audio" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_pause_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:src="@drawable/ic_audio_pause"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/view_receive_audio"
+            app:layout_constraintStart_toEndOf="@+id/view_receive_audio"
+            app:layout_constraintTop_toTopOf="@+id/view_receive_audio" />
+
+
+        <SeekBar
+            android:id="@+id/seekbar_in"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/MySeekBarTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/view_dummy_receiver"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view_dummy_receiver"
+            app:layout_constraintTop_toTopOf="@+id/view_dummy_receiver" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_runtime_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="text"
+            android:text="09"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_7sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/textview_total_time_in"
+            app:layout_constraintTop_toTopOf="@+id/layout_receive_audio" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_total_time_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="text"
+            android:text="/ 09"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_7sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/layout_receive_audio"
+            app:layout_constraintTop_toTopOf="@+id/layout_receive_audio" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_audio_time_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="09:10"
+            android:textColor="@color/msg_time"
+            android:textSize="@dimen/_7sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/seekbar_in"
+            app:layout_constraintTop_toBottomOf="@+id/seekbar_in" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

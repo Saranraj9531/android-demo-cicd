@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#164194</color>
+    <color name="color_primary_dark">#164194</color>
+    <color name="color_accent">#164194</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_two">#d3d3d3</color>
+    <color name="black">#000000</color>
+    <color name="alpha_black">#90000000</color>
+    <color name="red">#E62A35</color>
+    <color name="grey">#919391</color>
+    <color name="greyish_brown">#484848</color>
+    <color name="warm_grey">#9f9f9f</color>
+    <color name="pinkish_grey">#d1d1d1</color>
+    <color name="tab_grey">#f4f4f4</color>
+
+    <!-- Palette colors-->
+    <color name="view_grey">#E0E2E2</color>
+    <color name="white_three">#f4f4f4</color>
+    <color name="light_grey">#eff0ef</color>
+    <color name="black_two">#353535</color>
+
+    <color name="msg_time">#919391</color>
+
+</resources>

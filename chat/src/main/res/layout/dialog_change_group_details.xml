@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_group_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_dialog_group_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_group_dialog_title"
+        android:layout_margin="10dp"
+        android:inputType="textCapSentences"
+        android:selectAllOnFocus="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_dialog_group_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_dialog_group_subject"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/roboto_regular"
+        android:selectAllOnFocus="true"
+        android:text="@string/group_desc_content"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_above="@id/ll_group_dialog"
+        android:background="@color/view_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_group_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_group_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:text="@string/str_cancel"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:background="@color/tab_grey" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_group_dialog_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:text="@string/str_ok" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

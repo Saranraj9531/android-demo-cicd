@@ -1,0 +1,43 @@
+package com.sparkout.chat.socket
+
+// Created by krish on 20-Jul-20.
+// Copyright (c) 2020 Pikchat. All rights reserved.
+class EventMethods {
+    companion object {
+        const val SINGLE_CHAT_SEND_MESSAGE = "SINGLE_CHAT_SEND_MESSAGE"
+        const val SINGLE_CHAT_TYPING = "SINGLE_CHAT_TYPING"
+        const val SINGLE_CHAT_DELIVERED = "SINGLE_CHAT_DELIVERED"
+        const val SINGLE_CHAT_READ = "SINGLE_CHAT_READ"
+        const val ADD_CONTACT = "ADD_CONTACT"
+        const val PROFILE_UPDATED = "PROFILE_UPDATED"
+        const val GET_MY_CONTACTS = "GET_MY_CONTACTS"
+        const val ONLINE_OFFLINE = "ONLINE_OFFLINE"
+        const val CREATE_GROUP_EVENT = "CREATE_GROUP"
+        const val ADDED_IN_NEW_GROUP_EVENT = "ADDED_IN_NEW_GROUP"
+        const val GET_USERS_INFO_EVENT = "GET_USERS_INFO"
+        const val GROUP_CHAT_MESSAGE_EVENT = "GROUP_CHAT_MESSAGE"
+        const val GROUP_INFO_UPDATE_EVENT = "GROUP_INFO_UPDATE"
+        const val GROUP_ADD_MEMBER_EVENT = "GROUP_ADD_MEMBER"
+        const val GROUP_REMOVE_MEMBER_EVENT = "GROUP_REMOVE_MEMBER"
+        const val GROUP_EXIT_MEMBER_EVENT = "GROUP_EXIT_MEMBER"
+        const val GROUP_ADD_ADMIN_EVENT = "GROUP_ADD_ADMIN"
+        const val GROUP_REMOVE_ADMIN_EVENT = "GROUP_REMOVE_ADMIN"
+        const val GROUP_CHAT_DELIVERED_EVENT = "GROUP_CHAT_DELIVERED"
+        const val GROUP_CHAT_READ_EVENT = "GROUP_CHAT_READ"
+        const val REPORT_MESSAGE_EVENT = "REPORT_MESSAGE"
+        const val AUDIO_PLAYED_ON_CHAT_EVENT = "AUDIO_PLAYED_ON_CHAT"
+        const val AUDIO_PLAYED_ON_GROUP_CHAT_EVENT = "AUDIO_PLAYED_ON_GROUP_CHAT"
+        const val DELETE_FOR_EVERYONE_GROUP_EVENT = "DELETE_FOR_EVERYONE_GROUP"
+        const val MESSAGE_DELETED_ON_GROUP_EVENT = "MESSAGE_DELETED_ON_GROUP"
+        const val DELETE_FOR_EVERYONE_CHAT_EVENT = "DELETE_FOR_EVERYONE_CHAT"
+        const val MESSAGE_DELETED_ON_CHAT_EVENT = "MESSAGE_DELETED_ON_CHAT"
+        const val GET_GROUPS_EVENT = "GET_GROUPS"
+        const val ERROR_EVENT = "ERROR"
+        const val GET_GROUP_MEMBERS_EVENT = "GET_GROUP_MEMBERS"
+        const val ACK_EVENT = "ACK"
+        const val GET_GROUP_INFO_EVENT = "GET_GROUP_INFO"
+        const val BLOCK_CONTACT_EVENT = "BLOCK_CONTACT"
+        const val UN_BLOCK_CONTACT_EVENT = "UN_BLOCK_CONTACT"
+        const val GET_BLOCKED_CONTACTS_EVENT = "GET_BLOCKED_CONTACTS"
+    }
+}

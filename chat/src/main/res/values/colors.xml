@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#f8800b</color>
+    <color name="color_primary_dark">#f8800b</color>
+    <color name="color_accent">#f8800b</color>
+    <color name="color_chat">#FFAFC4ED</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_two">#d3d3d3</color>
+    <color name="white_embosed">#30d3d3d3</color>
+    <color name="black">#2e2e2e</color>
+
+    <color name="blacktwo">#2e2e2e</color>
+    <color name="alpha_black">#90000000</color>
+    <color name="red">#E62A35</color>
+    <color name="grey">#919391</color>
+
+    <color name="pale_grey">#f2f3f7</color>
+    <color name="greyish_brown">#484848</color>
+    <color name="greyish_brown_two">#404040</color>
+    <color name="warm_grey">#9f9f9f</color>
+    <color name="warm_grey_two">#707070</color>
+    <color name="pinkish_grey">#d1d1d1</color>
+    <color name="tab_grey">#f4f4f4</color>
+    <color name="info_background_color">#EDEDED</color>
+    <color name="info_title_color">#1F7C69</color>
+
+    <!-- Palette colors-->
+    <color name="view_grey">#E0E2E2</color>
+    <color name="white_three">#f4f4f4</color>
+    <color name="light_grey">#eff0ef</color>
+    <color name="black_two">#353535</color>
+    <color name="cool_grey">#b2b3b4</color>
+    <color name="gif_background">#E3E7E8</color>
+    <color name="send_text_background">#d0def7</color>
+    <color name="receive_text_background">#eff0ef</color>
+    <color name="msg_text">#353535</color>
+    <color name="msg_time">#919391</color>
+    <color name="color_desc_text">#747474</color>
+    <color name="accupits_red">#FF5353</color>
+    <color name="color_tomato">#d82424</color>
+    <color name="tangerine">#fee6bd</color>
+    <color name="ocre">#d39300</color>
+    <color name="wheat">#fede7e</color>
+    <color name="mariagold">#ffcb00</color>
+    <color name="pumpkin_orange">#f8800b</color>
+    <color name="location_background">#e0ffc6</color>
+
+    <array name="default_colors">
+        <item>#ff0000</item>
+        <item>#ffff00</item>
+        <item>#00ffff</item>
+        <item>#000000</item>
+    </array>
+
+</resources>
